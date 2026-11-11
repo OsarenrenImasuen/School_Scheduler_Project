@@ -22,9 +22,14 @@ class Loginpage(ctk.CTk):
 
     def open_toplevel(self):
         if self.toplevel_window is None or not self.toplevel_window.winfo_exists():
+            ctk.CTkInputDialog(text="Type in your Password", title="Test")
+        else:
+            self.toplevel_window.focus()
+        if self.toplevel_window is None or not self.toplevel_window.winfo_exists():
             ctk.CTkInputDialog(text="Type in your Username", title="Test")
         else:
             self.toplevel_window.focus()
+        
 
 
 app = Loginpage()
