@@ -91,7 +91,6 @@ class CalendarFrame(ctk.CTkFrame):
                 )
                 day_label.grid(row=0, column=col, padx=5, pady=5, sticky="nsew")
             
-            # Create grid for dates (6 rows x 7 columns)
             self.date_buttons = []
             for row in range(1, 7):
                 week_buttons = []
